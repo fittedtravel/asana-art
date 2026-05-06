@@ -84,23 +84,15 @@ html, body {
   background-size: 240px 240px;
 }
 
-/* centered group ---------------------------------------------------------- */
-.center {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
 /* wordmark — Lora 300 ----------------------------------------------------- */
 .wordmark {
+  position: relative;
+  z-index: 1;
   font-family: 'Lora', 'Times New Roman', serif;
   font-weight: 300;
   font-size: clamp(3.5rem, 14vw, 11rem);
   line-height: 0.95;
-  letter-spacing: -0.02em;   /* APPROVED: tighter than brief */
+  letter-spacing: -0.02em;
   color: var(--ink);
   margin: 0;
   text-align: center;
@@ -113,19 +105,6 @@ html, body {
 @keyframes breath {
   0%, 100% { transform: scale(1); }
   50%      { transform: scale(var(--breath-amp)); }
-}
-
-/* teaser — handwritten Caveat -------------------------------------------- */
-.teaser {
-  font-family: 'Caveat', 'Brush Script MT', cursive;
-  font-weight: 500;
-  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
-  letter-spacing: 0.06em;
-  color: var(--ink);
-  text-align: center;
-  margin: 0;
-  margin-top: 0.05em;
-  opacity: 0.95;
 }
 
 /* reduced motion ---------------------------------------------------------- */
